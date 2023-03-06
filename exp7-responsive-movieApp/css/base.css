@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.row {
+    margin-top: 40px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-2 {
+    float: left;
+    width: 50%;
+}
+
+.col-3 {
+    float: left;
+    width: 33.3%;
+}
+
+.col-4 {
+    float: left;
+    width: 25%;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Bir resme .img-fluid eklediğimizde width:100%; ve height:auto; özelliklerini uygulamış oluyoruz dolayısıyla resmin genişliği içinde bulunduğu etiketin genişliğine göre ayarlanmış oluyor. */
+.img-fluid {
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media (min-width: 1200px) and (max-width:1399px) {
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+        margin: 0 auto;
+    }
+}
+
